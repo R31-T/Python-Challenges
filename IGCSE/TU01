@@ -1,0 +1,2 @@
+print('Hello, world! Time to do some math!')
+print('10*10 is ' + str(10*10))
