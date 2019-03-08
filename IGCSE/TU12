@@ -1,0 +1,23 @@
+('Lets make a list of your favourite video game characters!')
+list = []
+
+edit = input('Would you like to edit your list? ')
+
+while edit in ['yes','y','YES','Yes','Y']:
+    action = input('Would you like to add/remove/display your list? ')
+    if action in ['add','ADD','A','Add']:
+        add = input('Which character would you like to add? ')
+        list.append(add)
+        print('You have successfully added: ' + str(add))
+
+    elif action in ['remove','R','Remove','REMOVE']:
+        remove = (input('Which character would you like to remove? '))
+        list.remove(remove)
+        print('You have successfully removed: ' + str(remove))
+    
+    else:
+        sort = input('Would you like to print your list alphabeticaly? ')
+        if sort in ['yes','y','YES','Yes','Y']:
+            list.sort()
+        print(*list,sep=', ')
+    edit = input('Do you still want to edit your list? ')
