@@ -1,0 +1,17 @@
+import random
+print('Lets play a guessing game!')
+print('I will pick a number from 1 to 100 and you will guess')
+
+numofguesses = 0
+guess = 0
+number = random.randint(1,100)
+
+while guess != number:
+    numofguesses = numofguesses + 1
+    guess = int(input('Guess the number: '))
+    if guess > number:
+        print('Smaller!')
+    if guess < number:
+        print('Larger')
+
+print('You took ' + str(numofguesses) + ' tries')
