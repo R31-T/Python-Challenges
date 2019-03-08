@@ -1,0 +1,13 @@
+import time
+
+name = input('Hello there! My name is Ordis, whats yours? ')
+print('Analysing input...')
+time.sleep(1)
+print('Nice to meet you',name + '!')
+
+age = int(input('How old are you? '))
+print('Analysing input...')
+time.sleep(1)
+print('Wow... You are exactly',5000-age,'years younger than me!')
+time.sleep(1)
+print('It was fun talking to you, going to fly off to mars now!')
