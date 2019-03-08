@@ -1,0 +1,9 @@
+myheight = 50
+yourheight = int(input('Please enter your height in cm: '))
+
+if myheight > yourheight:
+    print('You are shorter than me!')
+elif myheight < yourheight:
+    print('You are taller than me!')
+else:
+    print('We are the same height!')
