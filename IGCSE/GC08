@@ -1,0 +1,22 @@
+print('BMI calculator')
+
+yesno = input('Would you like to calculate your BMI? [y/n] ')
+
+if yesno == 'y':
+    print('Cool, lets get started!')
+    height = float(input('What is your height in metres? '))
+    mass = float(input('What is your mass in kg? '))
+    bmi = mass/height**2
+    print('Your BMI is',bmi)
+
+    if 18.5 <= bmi < 25:
+        print('You are doing fine, keep it up!')
+    
+    if bmi < 18.5:
+        print('You gotta start eating something')
+
+    if 25.0 <= bmi < 30.0:
+        print('You are overweight')
+
+    if 30 <= bmi:
+        print('Exersise more and go on a diet')
