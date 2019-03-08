@@ -1,0 +1,4 @@
+x = float(input('Please enter a decimal number: '))
+y = int(input('Round to how many decimal places? '))
+
+print(round(x,y))
