@@ -1,0 +1,7 @@
+print('Time to find out what people think is THE best subject')
+answer = []
+while answer != 'computer science':
+    answer = input('What is the best subject? ')
+    if answer != 'computer science':
+        print('Nope.')
+print('You got it correct!')
