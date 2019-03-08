@@ -1,0 +1,7 @@
+print('This is the mario pyramid!!!')
+height = int(input('How many blocks tall would you like it to be? '))
+y = 0
+
+for i in range(height):
+    y = y + 1
+    print('x'*y)
