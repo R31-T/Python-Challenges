@@ -1,0 +1,8 @@
+string = 'umiyonpaemuetiwsajdeffgfn'
+print(string[24::-1])
+print(string[4::3])
+print(string[1::3])
+
+action = input('Would you like to decode this message? [y/n] ')
+if action == 'y':
+    print(string[1::2])
