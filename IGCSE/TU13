@@ -1,0 +1,26 @@
+list = []
+edit = input('Would you like to edit your list? [y/n] ')
+
+while edit == 'y':
+    action = input('Would you like to add(a), remove(r) or display(d)? ')
+    if action == 'a':
+        list.append(int(input('What would you like to add? ')))
+    if action == 'r':
+        list.remove(int(input('What would you like to remove? ')))
+    if action == 'd':
+        print(list)
+    edit = input('Would you like to edit your list? [y/n] ')
+
+stat = ()
+while stat != 10:
+    stat = input('total, min, max, length or mean? ')
+    if stat == 'total':
+        print(sum(list))
+    if stat == 'min':
+        print(min(list))
+    if stat == 'max':
+        print(max(list))
+    if stat == 'length':
+        print(len(list),'value(s)')
+    if stat == 'mean':
+        print(sum(list)/len(list))
