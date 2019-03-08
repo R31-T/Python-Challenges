@@ -1,0 +1,5 @@
+import random
+print('number generator for 0.1 to 9.9')
+generate = input('Generate number? [y/n] ')
+if generate == 'y':
+    print(random.uniform(1, 9.9))
