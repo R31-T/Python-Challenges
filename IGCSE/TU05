@@ -1,0 +1,5 @@
+subject = input('What is the best subject of all time? ')
+if subject == 'computer science':
+    print('You are correct!')
+else:
+    print('You are WRONG!')
