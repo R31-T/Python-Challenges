@@ -1,0 +1,20 @@
+balance = 500
+
+print('Welcome to the weirdest ATM in the world!')
+print('This ATM only accepts cash in multiples of 5')
+print('And charges $0.50 for every transaction')
+action = input('Would you like to withdraw money? [y/n] ')
+
+while action == 'y':
+    if action == 'y':
+        print('You currently have $' + str(balance),'in your bank account')
+        amount = int(input('How much money would you like to withdraw? '))
+        if amount%5 != 0:
+            print('Not a multiple of 5')
+            print('Try again!')
+        elif (amount+0.5) > balance:
+            print('Insufficient funds!')
+        else:
+            balance = balance - (amount + 0.5)
+            print('You have successfully withdrawed $' + str(amount))
+    action = input('Would you like to withdraw anymore money? [y/n] ')
