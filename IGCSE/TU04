@@ -1,0 +1,5 @@
+print('Lets find the difference between your age and a celebritys.')
+
+age = int(input('Enter your age: '))
+celebage = int(input('Enter the age of the celebrity of choice: '))
+print('The age difference is', (celebage-age))
