@@ -1,0 +1,14 @@
+import time
+
+print('The time your spaceship takes to charge up is 51 hours')
+time.sleep(1)
+current = int(input('What is the current time in 24 hours? '))
+
+endtime = (51 + current)%24
+days = (51-51%24)/24
+
+print("Charge up complete in")
+time.sleep(1)
+print(days,"days")
+time.sleep(0.5)
+print("at",endtime,"00")
