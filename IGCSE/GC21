@@ -1,0 +1,51 @@
+import turtle
+import random
+import time
+
+wn = turtle.Screen()
+wn.bgcolor("yellow")
+wn.title("Max the Turtle")
+
+colors = ["cyan", "purple", "blue", "green", "magenta"]
+max = turtle.Turtle()
+
+max.penup()
+max.left(90)
+max.forward(50)
+max.left(90)
+max.forward(200)
+max.right(90)
+max.forward(100)
+max.pendown()
+max.left(180)
+max.forward(250)
+max.left(180)
+max.forward(125)
+max.right(90)
+max.forward(150)
+max.left(90)
+max.forward(125)
+max.left(180)
+max.forward(250)
+max.penup()
+max.left(90)
+max.forward(100)
+max.pendown()
+max.forward(100)
+max.left(180)
+max.forward(50)
+max.right(90)
+max.forward(250)
+max.left(90)
+max.forward(50)
+max.left(180)
+max.forward(100)
+max.penup()
+max.forward(100)
+
+max.shape('turtle')
+for i in range(7):
+    max.stamp()
+    max.color(random.choice(colors))
+    time.sleep(0.5)
+    max.right(45)
