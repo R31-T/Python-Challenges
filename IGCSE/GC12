@@ -1,0 +1,26 @@
+import time
+
+print('Welcome to the PS4 timer!')
+time.sleep(1)
+print('Sadly your household only has one PS4')
+time.sleep(1)
+
+turn = int(input('How much time would you like each turn to be in seconds? '))
+time.sleep(0.5)
+numofturns = int(input('How many turns would you like there to be? '))
+time.sleep(0.5)
+players = int(input('How many people want to play? '))
+
+if numofturns%players != 0:
+    time.sleep(0.5)
+    print('Thats not fair!!!')
+
+else:
+    for x in range(numofturns):
+        time.sleep(turn)
+        print('Ring!')
+        time.sleep(0.5)
+        print('Ring!')
+        time.sleep(0.5)
+        print('Ring!')
+        print('Time for you to stop!')
