@@ -1,0 +1,21 @@
+import random
+import turtle
+import time
+
+direction = ['left','right']
+
+pirate = turtle.Turtle()
+pirate.speed(1)
+time.sleep(2)
+
+for i in range(10):
+    choice = random.choice(direction)
+    if choice == 'left':
+        angle = random.randint(1,500)
+        pirate.left(angle)
+
+    if choice == 'right':
+        angle = random.randint(1,500)
+        pirate.right(angle)
+    
+    pirate.forward(100)
