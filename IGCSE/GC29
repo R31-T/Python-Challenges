@@ -1,0 +1,23 @@
+import random
+students = int(input('How many students? '))
+
+amazing = ['has been a pleasure to teach throughout the whole year.','has always been a wonderful student, constantly helping peers in and out of classes.','never fails to achieve excellent grades for every test and aim to continue to do so.']
+good = ['displays a positive attitude towards learning new things, however needs to continue reading more often at home.','always willingly participates in group activities and encourages the contribution of others.','has done a great job in his final exam but has to revisit and recall previous topics.']
+ok = ['is working well towards the improvement of study skills.','is gradually discovering more effective ways to learn during class and at home.','has set reasonable targets to aim to achieve by the end of next year.']
+improving = ['is encouraged to pay more attention during classes to be able to learn more.','often struggles to complete individual tasks without the distraction of others.','would benefit greatly by showing a greater desire to contribute ideas in class.']
+
+for i in range(students):
+    name = input('Enter name of student: ')
+    grade = int(input('What percentage did the student achieve for the final exam? '))
+    
+    if 100 >= grade >= 80:
+        print(str(name),random.choice(amazing))
+        
+    if 80 > grade >= 70:
+        print(str(name),random.choice(good))
+        
+    if 70 > grade >= 50:
+        print(str(name),random.choice(ok))
+        
+    if 50 > grade:
+        print(str(name),random.choice(improving))
