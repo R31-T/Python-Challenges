@@ -1,0 +1,8 @@
+x = input('Enter a value: ')
+
+if x.isdigit():
+    print('Error, value is not a float!')
+
+else:
+    Number = float(x)
+    print('Value is a float!')
