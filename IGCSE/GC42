@@ -1,0 +1,25 @@
+import random
+import numpy
+
+z = input('Generate numbers?[y/n] ')
+
+if z == 'y':
+    numofnum = int(input('How many numbers? '))
+    maxnum = int(input('Max number: '))
+    list = numpy.random.randint(maxnum, size=numofnum)
+
+print(*list, sep = ', ')
+
+present = input('min, max, length or mean? ')
+
+if present == 'min':
+    print(min(list))
+
+if present == 'max':
+    print(max(list))
+    
+if present == 'length':
+    print(len(list))
+    
+if present == 'mean':
+    print(sum(list)/len(list))
