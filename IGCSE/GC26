@@ -1,0 +1,16 @@
+print('Welcome to the drunk-o-meter')
+print('The phrase is: i am very drunk')
+x = 'a'
+while x == 'a':
+    x = input('Type the phrase: ')
+    if x != 'i am very drunk':
+        break
+    x = input('Type the phrase again: ')
+    if x != 'i am very drunk':
+        break
+
+if x != 'i am very drunk':
+    print('You are very drunk')
+    
+else:
+    print('You are okay!')
