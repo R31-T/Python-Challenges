@@ -1,0 +1,13 @@
+word = input('Enter a word: ')
+
+letters = []
+vowels = ['a','e','i','o','u','A','E','I','O','U']
+x = 0
+vowelnum = 0
+
+for i in range(len(word)):
+    if word[x] in vowels:
+        vowelnum = vowelnum + 1
+    x = x + 1
+    
+print('Number of vowels =',str(vowelnum))
