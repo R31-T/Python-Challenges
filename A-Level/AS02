@@ -1,0 +1,14 @@
+#number list of 1 to 100
+import random
+numlist = []
+for i in range(10):
+    numlist.append(random.randint(1,100))
+print(numlist)
+position = 0
+search = 0
+num = int(input('Search for a number: '))
+while num != numlist[position]:
+    position = position + 1
+print('Your number was in position',str(position + 1))
+if num not in numlist:
+    print('Number does not exist in the list')
