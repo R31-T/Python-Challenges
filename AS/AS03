@@ -1,6 +1,0 @@
-text = input('Enter the text: ')
-x = len(text)
-
-display = input('Display text? [y/n] ')
-if display == 'y':
-    print(text[x::-1])
