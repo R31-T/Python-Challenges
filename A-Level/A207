@@ -1,0 +1,9 @@
+words = input('Words: ')
+
+wordlist = words.split(' ')
+wordlist.sort()
+file = open('Sorted.txt', 'x')
+for i in range(len(wordlist)):
+    file.write(wordlist[i])
+    file.write('\n')
+file.close()
