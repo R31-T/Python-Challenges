@@ -1,0 +1,35 @@
+import random
+import string
+import datetime
+
+s = []
+datatypes = ["INT","REAL","CHAR","STRING","BOOLEAN","DATE"]
+
+INT = random.randint(1,6969) #INTEGER
+
+REAL = random.uniform(1,6969) #REAL
+
+for i in range(random.randint(2,10)):
+    s.append(random.choice(string.ascii_letters))
+    STRING = "".join(s) #STRING
+    
+CHAR = random.choice(['a','b','c','d','e','f','g','h','j','i','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'])
+
+BOOLEAN = random.choice(["TRUE","FALSE"]) #BOOLEAN
+
+DATE = datetime.date(random.randint(1900,2100),random.randint(1,12),random.randint(1,28)) #DATE
+
+d = {'INT' : INT, 'STRING' : STRING, 'REAL' : REAL, 'CHAR' : CHAR, 'BOOLEAN' : BOOLEAN, 'DATE' : DATE}
+
+c = 0
+for i in range(6):
+    dtype = random.choice(datatypes)
+    print(d[dtype])
+    answer = input('Data type: ')
+    if answer == dtype:
+        c = c + 1
+    
+    datatypes.remove(dtype)
+    del d[dtype]
+
+print('Score:',str(c)+'/6')
