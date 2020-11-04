@@ -1,16 +1,20 @@
 import random
-import numpy
-import time
+numlist = []
+for i in range(random.randint(5,10)):
+    numlist.append(random.randint(5,10))
 
-maxnum = int(input('Max number: '))
-numofnum = int(input('How many numbers? '))
+print(numlist)
 
-numlist = numpy.random.randint(maxnum, size=numofnum)
-print('List without sorting')
-print(*numlist, sep = ', ')
-time.sleep(2)
+x = len(numlist) - 1
 
-numlist.sort()
-print('With sorting (ascending order)')
-time.sleep(2)
-print(*numlist, sep = ', ')
+for i in range(x):
+    for a in range(x):
+        
+        if numlist[a] > numlist[a + 1]:
+
+            number = numlist[a]
+            numlist[a] = numlist[a + 1]
+            numlist[a + 1] = number
+
+print('Bubble sorted')
+print(numlist)
