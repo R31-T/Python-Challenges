@@ -1,0 +1,18 @@
+import time
+
+R = 'R'
+M = 'M'
+
+choice = input('Rudyard or mam [R/M]: ')
+
+if choice == 'R':
+    with open('rudyard.txt','r') as text:
+        for line in text:
+            print(line)
+            time.sleep(4)
+
+if choice == 'M':
+    with open('mam.txt','r') as text:
+        for line in text:
+            print(line)
+            time.sleep(4)
