@@ -1,0 +1,11 @@
+y = -999999
+
+with open("counter.txt","r") as read_file:
+    for line in read_file:
+        if int(line) > y:
+            y = int(line)
+
+with open("counter.txt","a") as existing_file:
+    for i in range(10):
+        line_to_write = str(i+y+1)+"\n"
+        existing_file.write(line_to_write)
